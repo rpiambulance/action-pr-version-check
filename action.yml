@@ -1,5 +1,8 @@
 name: 'PR Version Check'
 description: 'Checks if a version line in a given file has changed in this branch against master'
+branding:
+  color: red
+  icon: alert-triangle
 
 inputs:
   file:
