@@ -1,0 +1,14 @@
+name: 'Version Check'
+description: 'Checks if a version line in a given file has changed in this branch against master'
+
+inputs:
+  file:
+    description: File to check
+    required: false
+    default: package.json
+
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.file }}
