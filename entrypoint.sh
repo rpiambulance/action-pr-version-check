@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 file=$1
+git pull origin/master
 
 check_versions() {
     git diff origin/master ${file} | grep version
