@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Check if version changed
-      uses: rpiambulance/action-pr-version-check
+      uses: rpiambulance/action-pr-version-check@0.1.1
       with:
         file: package.json # optional, defaults to "package.json"
 ```
